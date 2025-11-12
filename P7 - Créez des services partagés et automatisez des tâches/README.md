@@ -12,7 +12,9 @@ Vous êtes mobilisé sur ce chantier, et votre première journée débute par un
 
 Au cours de cette réunion, vous échangez sur les **modifications à apporter à l’infrastructure** et sur les **outils d’administration** à automatiser.
 
+
 ---
+
 
 ## ⚙️ Scripts développés
 
@@ -37,12 +39,9 @@ Au cours de cette réunion, vous échangez sur les **modifications à apporter �
 - Validation de la **complexité** selon la **PSO** (Password Settings Object)
 - Affichage d’un **récapitulatif** détaillé après création
 
-#### ⚠️ Limites / améliorations possibles
-- Compatibilité partielle avec les systèmes en anglais (libellé “Utilisateurs” dans les ACL)
-- Nécessite que les OU et groupes globaux existent déjà
-- Possible extension : journalisation, mode non interactif, normalisation des accents
 
 ---
+
 
 ### 🔁 2. `reset password.ps1`
 **Objectif :** automatiser la réinitialisation du mot de passe d’un utilisateur AD.
@@ -62,32 +61,9 @@ Au cours de cette réunion, vous échangez sur les **modifications à apporter �
 - Options configurables en début de script :
   - génération automatique, longueur, caractères, déverrouillage, etc.
 
-#### ⚠️ Limites / améliorations possibles
-- Recherche par nom sensible à la casse et aux formats de `DisplayName`
-- Pas de rotation de logs
-- Le mot de passe généré est affiché une fois (bonne pratique : le transmettre via un canal sécurisé)
-
----
-
-## 📄 Conclusion
-
-Ces deux scripts PowerShell illustrent la mise en œuvre d’outils d’administration simples et robustes pour un environnement Active Directory :
-- **standardisation** des comptes utilisateurs,  
-- **sécurisation** des opérations courantes,  
-- **gain de temps** pour les techniciens systèmes.
-
-Ils s’inscrivent dans le cadre du projet de migration Windows d’Axe Plane, mené dans la formation **Technicien Informatique (RNCP niv.5 – Bac+2)**.
-
----
 
 ## 🧰 Technologies utilisées
 - **Windows Server / Active Directory**
 - **PowerShell 5+**
 - **RSAT – Remote Server Administration Tools**
 - **SMB / NTFS ACL**
-
----
-
-## 👤 Auteur
-Projet réalisé dans le cadre de la formation **Technicien Informatique** – OpenClassrooms  
-Tous les scripts sont fournis à titre **démonstratif (code figé)**.
