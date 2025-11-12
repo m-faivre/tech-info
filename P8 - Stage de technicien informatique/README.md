@@ -1,3 +1,8 @@
+> 🗂️ Projet développé durant mon stage en mairie, dans le cadre de la formation Technicien Informatique (RNCP niv.5 – Bac+2).  
+> Le README ci-dessous est la documentation destinée aux utilisateurs du logiciel.
+
+
+
 # Session Manager v1.0b
 
 Session Manager est un ensemble de deux programmes permettant la gestion des sessions invités dans le point Cyber de la mairie de Louhans-Chateaurenaud.
