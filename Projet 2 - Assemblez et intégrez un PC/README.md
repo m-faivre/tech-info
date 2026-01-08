@@ -1,45 +1,47 @@
-🧩 Projet – Poste client sur mesure
-📘 Description du projet
+# 🧩 Projet – Poste client sur mesure
 
-Vous travaillez dans une boutique de réparation d’ordinateurs, PCRepair. Votre responsable, Tony, vous transmet les besoins d’un nouveau client : M. Dupont, architecte, souhaitant un PC sur mesure.
+## 📘 Description du projet
 
-Le poste doit permettre un usage CAO / DAO (Revit, Archicad, FreeCAD), inclure 2 écrans 4K avec clavier/souris, fonctionner sous Windows 10 avec F.lux, être intégré au réseau local du client avec test d’accès au NAS, et inclure une proposition d’antivirus.
+Vous travaillez dans une boutique de réparation d’ordinateurs, *PCRepair*.  
+Votre responsable, Tony, vous transmet les besoins d’un nouveau client : **M. Dupont**, architecte, souhaitant un **PC sur mesure**.
 
-⚙️ Livrables réalisés
-🧱 1. Devis complet (PDF)
+Le client utilise des logiciels de **CAO / DAO** (*Revit, Archicad, FreeCAD*) et a formulé les contraintes suivantes :
+- poste client **performant**
+- **2 écrans 4K** avec clavier et souris
+- **Windows 10** avec installation de **F.lux**
+- intégration au **réseau local** avec test d’accès au **NAS**
+- proposition d’une **solution antivirus**
 
-Configuration matérielle proposée, composant par composant
+Votre mission consiste à proposer une configuration matérielle adaptée et à fournir l’ensemble des livrables demandés.
 
-Prise en compte des besoins logiciels et des périphériques (2 écrans 4K)
+---
 
-Intégration des demandes : Windows 10, F.lux, accès NAS, antivirus
+## ⚙️ Livrables réalisés
 
-🧱 2. Schéma de la carte mère (PDF)
+### 🧱 1. Devis complet du poste client (PDF)
+- Configuration matérielle détaillée, composant par composant
+- Prise en compte des contraintes matérielles et logicielles
+- Intégration des périphériques (2 écrans 4K)
+- Proposition d’une solution antivirus
 
-Emplacements et connecteurs de chaque composant identifiés
+### 🧱 2. Schéma de la carte mère (PDF)
+- Emplacements et connecteurs de chaque composant identifiés
 
-🧱 3. Capture “À propos” Windows (PNG/JPEG)
+### 🧱 3. Capture des informations système Windows (PNG/JPEG)
+- Capture de la section **« À propos »**
+- Édition de Windows et date d’installation visibles
 
-Édition de Windows visible
+### 🧱 4. Capture d’accès au NAS (PNG/JPEG)
+- Explorateur de fichiers Windows affichant les fichiers stockés sur le NAS
 
-Date d’installation visible
+### 🧱 5. Tableau comparatif de 3 antivirus (PDF)
+- Comparatif synthétique de trois solutions antivirus
 
-🧱 4. Capture Explorateur – accès NAS (PNG/JPEG)
+---
 
-Affichage des fichiers stockés sur le NAS du client
+## 🧰 Technologies utilisées
 
-🧱 5. Tableau comparatif de 3 antivirus (PDF)
-
-Comparatif synthétique de 3 solutions
-
-🧰 Technologies utilisées
-
-Windows 10
-
-Revit / Archicad / FreeCAD
-
-Réseau local / NAS
-
-F.lux
-
-Solutions antivirus
+- **Windows 10**
+- Poste client PC sur mesure
+- Réseau local (accès NAS)
+- Outils bureautiques et utilitaires système
