@@ -1,69 +1,44 @@
-# 🧩 Projet de formation – Migration Windows
+# 🧩 Projet – Migration du parc informatique vers Windows
 
 ## 📘 Description du projet
 
-Vous êtes **technicien supérieur systèmes et réseaux** au service informatique de l’entreprise **Axe Plane**, spécialisée dans la fabrication de pièces mécaniques pour l’aviation.  
-L’entreprise compte environ **150 salariés** utilisant principalement **Linux Ubuntu 18.04 / 20.04**, et quelques postes sous Windows.  
+Vous êtes **technicien supérieur systèmes et réseaux** au sein du service informatique de l’entreprise **Axe Plane**, spécialisée dans la fabrication de pièces mécaniques pour l’aviation.
 
-Afin de disposer d’un parc plus récent et homogène, la direction a décidé de migrer l’ensemble des postes clients vers **Windows**.  
-Vous êtes mobilisé sur ce chantier, et votre première journée débute par une réunion avec :
-- **Anthony Pacaut**, responsable du service informatique  
-- **Aaron Scott**, administrateur systèmes et réseaux  
+L’entreprise compte environ **150 salariés** et utilise majoritairement des postes sous **Linux Ubuntu 18.04 et 20.04**, ainsi que quelques ordinateurs sous **Windows**.
 
-Au cours de cette réunion, vous échangez sur les **modifications à apporter à l’infrastructure** et sur les **outils d’administration** à automatiser.
+Afin de disposer d’un parc plus récent et homogène, la direction décide d’investir dans de **nouveaux postes clients sous Windows**.  
+Vous êtes mobilisé sur ce **chantier de migration vers Windows**.
 
+Votre première journée débute par une réunion avec :
+- **Anthony Pacaut**, responsable du service informatique
+- **Aaron Scott**, administrateur systèmes et réseaux
 
----
-
-
-## ⚙️ Scripts développés
-
-### 🧱 1. `creation user.ps1`
-**Objectif :** automatiser la création d’un utilisateur Active Directory complet.
-
-#### ✨ Fonctionnalités principales
-- Création d’un **compte utilisateur AD** avec :
-  - login généré automatiquement (`p.nom`) ou saisi manuellement  
-  - mot de passe saisi ou généré aléatoirement (conforme à la PSO du domaine)
-  - options d’activation du compte et de changement de mot de passe à la première connexion
-- Rattachement au **groupe global** du service
-- Création et partage du **dossier personnel** sur le serveur de fichiers
-  - Partage caché (`\\serveur\login$`)
-  - Droits NTFS configurés : contrôle total accordé uniquement à l’utilisateur
-- Attribution du **lecteur réseau** (`P:`) dans les attributs AD
-
-#### 🔐 Points techniques
-- Utilise le module **ActiveDirectory** de PowerShell
-- Vérifie les **droits** et l’**unicité** du login
-- Génération de mot de passe via un **RNG sécurisé**
-- Validation de la **complexité** selon la **PSO** (Password Settings Object)
-- Affichage d’un **récapitulatif** détaillé après création
-
+Au cours de cette réunion, les **modifications à apporter à l’infrastructure** sont abordées.
 
 ---
 
+## ⚙️ Livrables réalisés
 
-### 🔁 2. `reset password.ps1`
-**Objectif :** automatiser la réinitialisation du mot de passe d’un utilisateur AD.
+### 🧱 1. Rapport de configuration de l’infrastructure (PDF)
+- Modèle du rapport de configuration complété
+- Validation du bon fonctionnement des **services installés**
 
-#### ✨ Fonctionnalités principales
-- Recherche d’un utilisateur par **DisplayName** (“Prénom Nom”) ou identifiant (`p.nom`)
-- Réinitialisation du mot de passe avec :
-  - mot de passe **généré aléatoirement** ou **saisi manuellement**
-  - option pour **déverrouiller le compte**
-  - option pour **forcer le changement à la prochaine connexion**
-- Journalisation complète des actions effectuées (fonction `Write-Log`)
+### 🧱 2. Rapport des GPO actives du domaine (HTML)
+- Rapport listant l’ensemble des **GPO actives**
+- Export réalisé via **PowerShell**
 
-#### 🔐 Points techniques
-- Module **ActiveDirectory**
-- Logs détaillés horodatés (`reset password.log`)
-- Mot de passe géré en **SecureString**
-- Options configurables en début de script :
-  - génération automatique, longueur, caractères, déverrouillage, etc.
+### 🧱 3. Script PowerShell de création d’utilisateur (PS1)
+- Script PowerShell permettant la **création d’un utilisateur**
 
+### 🧱 4. Script PowerShell de réinitialisation de mot de passe (PS1)
+- Script PowerShell permettant la **réinitialisation du mot de passe d’un utilisateur**
+
+---
 
 ## 🧰 Technologies utilisées
-- **Windows Server / Active Directory**
-- **PowerShell 5+**
-- **RSAT – Remote Server Administration Tools**
-- **SMB / NTFS ACL**
+
+- **Windows Server**
+- **Active Directory**
+- **PowerShell**
+- **GPO**
+- Infrastructure systèmes et réseaux
