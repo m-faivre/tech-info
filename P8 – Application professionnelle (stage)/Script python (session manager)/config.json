@@ -1,0 +1,24 @@
+{
+    "titres": {
+        "avertissement": "Ouverture de session",
+        "avertissement_2": "Sauvegardez vos donn\u00e9es",
+        "avertissement_3": "La session est termin\u00e9e"
+    },
+    "textes": {
+        "avertissement": "Bonjour,\\nVotre session durera %session minutes. Une fois ce d\u00e9lai termin\u00e9, votre session se fermera automatiquement.\\nBonne journ\u00e9e.",
+        "avertissement_2": "Il ne vous reste plus que minutes avant la fermeture de la session.\\nPensez \u00e0 sauvegarder vos donn\u00e9es.",
+        "avertissement_3": "Votre session est maintenant termin\u00e9e et se fermera dans %final minutes.\\nSauvegardez vos donn\u00e9es imm\u00e9diatement."
+    },
+    "popup": {
+        "largeur": 500,
+        "hauteur": 200,
+        "police": "calibri",
+        "taille_police": 14
+    },
+    "temps": {
+        "session": 1,
+        "avertissement": 1,
+        "final": 1
+    },
+    "choix": "Verrouiller"
+}
