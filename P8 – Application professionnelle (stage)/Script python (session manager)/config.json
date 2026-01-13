@@ -1,24 +1,42 @@
 {
-    "titres": {
-        "avertissement": "Ouverture de session",
-        "avertissement_2": "Sauvegardez vos donn\u00e9es",
-        "avertissement_3": "La session est termin\u00e9e"
+    "text": {
+        "text_popup_1": "Votre session va se terminer dans 15 minutes.\n\nPensez \u00e0 enregistrer vos donn\u00e9es et votre travail.\n\nVotre session se fermera automatiquement, il ne sera pas possible de r\u00e9cup\u00e9rer vos donn\u00e9es une fois le d\u00e9lai imparti termin\u00e9.",
+        "text_popup_2": "Attention, votre session va arriver \u00e0 son terme.\n\nVous serez d\u00e9connect\u00e9 dans {avertissement2} minutes. \n\nPensez \u00e0 enregistrer vos donn\u00e9es imm\u00e9diatement.",
+        "text_fermeture": "Votre session est maintenant termin\u00e9e.\nCette fen\u00eatre se fermera dans {fermeture} secondes et la session sera d\u00e9connect\u00e9e.\n\nLa mairie de Louhans-Chateaurenaud esp\u00e9re que le point Cyber a pu r\u00e9pondre \u00e0 vos attentes et besoins.\n\n\nNous vous remercierons d'\u00eatre pass\u00e9 par nos services et vous souhaitons une tr\u00e8s bonne journ\u00e9e.\n\n\nA bient\u00f4t."
     },
-    "textes": {
-        "avertissement": "Bonjour,\\nVotre session durera %session minutes. Une fois ce d\u00e9lai termin\u00e9, votre session se fermera automatiquement.\\nBonne journ\u00e9e.",
-        "avertissement_2": "Il ne vous reste plus que minutes avant la fermeture de la session.\\nPensez \u00e0 sauvegarder vos donn\u00e9es.",
-        "avertissement_3": "Votre session est maintenant termin\u00e9e et se fermera dans %final minutes.\\nSauvegardez vos donn\u00e9es imm\u00e9diatement."
+    "timer": {
+        "delai_fermeture": "15",
+        "duree_session": "3",
+        "timer_popup_1": "1",
+        "timer_popup_2": "1",
+        "timer_popup_3": "10"
     },
-    "popup": {
-        "largeur": 500,
-        "hauteur": 200,
-        "police": "calibri",
-        "taille_police": 14
+    "fiche": {
+        "fiche_log": true,
+        "fiche_activation": true,
+        "fiche_duree_session": true,
+        "fiche_15min": true,
+        "fiche_30min": true,
+        "fiche_1h": true
     },
-    "temps": {
-        "session": 1,
-        "avertissement": 1,
-        "final": 1
+    "session": {
+        "session_user": "Salle connnect\u00e9e 1",
+        "session_activation": true
     },
-    "choix": "Verrouiller"
+    "style": {
+        "largeur_popup": "650",
+        "hauteur_popup": "350",
+        "police": "Calibri",
+        "taille_police": "15",
+        "couleur_fond": "#eae8d3",
+        "couleur_texte": "#000000",
+        "couleur_bouton": "#e8e1c7",
+        "couleur_bouton_texte": "#000000",
+        "couleur_bouton_survol": "#a89a7e",
+        "texte_bouton": "J'ai compris"
+    },
+    "fermeture": {
+        "fermeture_session": "D\u00e9connecter",
+        "fermeture_popup": true
+    }
 }
