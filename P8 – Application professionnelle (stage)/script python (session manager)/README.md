@@ -1,14 +1,14 @@
 
 # Session Manager
 
-L'utilitaire Session Manager est utilisé pour gérer les sessions utilisateurs "Salle connectée" sur les PC de prêt de la mairie de Louhans-Chateaurenaud.
+L'utilitaire Session Manager est utilisé pour gérer les sessions utilisateurs "Salle connectée" sur les PC de prêt.
 
 
 
 
 ## Auteur
 
-- [Mickaël Faivre (mrimpli@gmail.com)]
+- [Mickaël Faivre (contact@m-faivre.fr)]
 
 
 ## Installation & Pré-requis
@@ -100,6 +100,4 @@ A partir de ce moment là, l'éxecutable peut-être déplacé sans se soucier de
 
 ## Support
 
-En cas de problème ou d'informations complémentaires, contactez mrimpli@gmail.com
-
-Les code-source au format .py de session_manager et de configuration sont disponibles auprès d'Antoine Armanet.
+En cas de problème ou d'informations complémentaires, contactez contact@m-faivre.fr
