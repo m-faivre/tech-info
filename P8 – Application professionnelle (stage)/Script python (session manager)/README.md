@@ -1,6 +1,6 @@
 # Session Manager v1.0b
 
-Session Manager est un ensemble de deux programmes permettant la gestion des sessions invités dans le point Cyber de la mairie de Louhans-Chateaurenaud.
+Session Manager est un ensemble de deux programmes permettant la gestion des sessions invités.
 
 ## Auteur
 Session Manager a été forgé à la main par [Mickaël Faivre](mailto:contact@m-faivre.fr)<br>
@@ -10,7 +10,6 @@ J'en profite pour remercier Github Copilot qui a su m'éclairer quand j'en avais
 Le code-source est disponible auprès de Mr Antoine Armanet. Conseiller numérique de la mairie de Louhans-Chateaurenaud.<br>
 Il est également disponible, sur demande, en m'envoyant un mail à contact@m-faivre.fr
 
-Vous pouvez également le trouver sur le Github du projet : https://github.com/impli-osx/session_manager
 
 ## Installation
 
@@ -104,7 +103,7 @@ Le PDF se trouve à l'emplacement suivant :
 
 > C:\mon\répertoire\session_manager\reglement.pdf
 
-## Logo de la mairie
+## Logo
 Vous pouvez modifier le logo actuel en remplaçant le fichier logo.png présent dans le dossier /img/, dans le répertoire courant du script.
 
 > C:\mon\répertoire\session_manager\img\logo.png
