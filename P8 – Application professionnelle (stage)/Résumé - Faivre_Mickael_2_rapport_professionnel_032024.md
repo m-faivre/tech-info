@@ -17,7 +17,7 @@ Développement de **"Session Manager"**, une application GUI pour la gestion du 
     * Gestion automatisée des sessions (déconnexion automatique, popups d'avertissement).
     * Collecte de données statistiques conformes RGPD (export Excel automatique).
     * Compilation en `.exe` autonome (via PyInstaller) pour déploiement sans dépendances.
-    * [Lien vers le dépôt du code source](https://github.com/m-faivre) *(Note : Mettez ici le lien vers le repo du code si vous l'avez mis sur GitHub, sinon supprimez cette ligne)*.
+    * [Lien vers le dépôt du code source]([https://github.com/m-faivre](https://github.com/m-faivre/tech-info/tree/main/P8%20%E2%80%93%20Application%20professionnelle%20(stage)/Script%20python%20(session%20manager)))
 
 ### 2. Infrastructure & Réseau
 Participation active à la rénovation du câblage et du réseau de deux salles (130m² et 70m²).
@@ -42,7 +42,4 @@ Participation active à la rénovation du câblage et du réseau de deux salles 
 
 > **Le rapport complet (50+ pages) détaille l'architecture interne, les plans d'adressage IP et les politiques de sécurité spécifiques de la collectivité.**
 >
-> Par souci de confidentialité et de sécurité ("Security by Design"), ce document n'est pas publié en libre accès sur ce dépôt. Il est consultable **uniquement sur demande** dans le cadre d'un processus de recrutement.
-
----
-*Mots-clés : Administration Système, Python, Réseau, Active Directory, Proxmox, CUPS, RGPD, Collectivité.*
+> Par souci de confidentialité et de sécurité, ce document n'est pas publié en libre accès sur ce dépôt. Il est consultable **uniquement sur demande** dans le cadre d'un processus de recrutement.
