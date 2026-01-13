@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Configuration</class>
+ <widget class="QMainWindow" name="Configuration">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>868</width>
+    <height>478</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="onglet">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>851</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>5</number>
+    </property>
+    <widget class="QWidget" name="accueil">
+     <attribute name="title">
+      <string>Accueil</string>
+     </attribute>
+     <widget class="QCheckBox" name="activation">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Activer Session Manager sur l'ordinateur pour l'utilisateur visé.</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="aide_accueil">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>10</y>
+        <width>75</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Aide</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="retour_activation">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>100</y>
+        <width>791</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Résultat de la création du raccourci dans le dossier Démarrage ...</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>20</y>
+        <width>141</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="user_session">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Choix de l'utilisateur visé :</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="gpupdate">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>301</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Recharger les stratégies de groupe locales</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="retour_gpupdate">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>180</y>
+        <width>781</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Résultat du rechargement des stratégies de groupe ...</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="formulaire">
+     <attribute name="title">
+      <string>Fiche d'entrée</string>
+     </attribute>
+     <widget class="QCheckBox" name="activation_fiche">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>491</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Activer la fiche d'entrée demandant les informations personnelles</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="log_fiche">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>491</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Stocker les informations données dans la fiche d'entrée dans un document excel</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="Informations">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>821</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Informations requises</string>
+      </property>
+      <widget class="QCheckBox" name="fiche_nom">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>181</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Nom de famille + prénom</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="fiche_mail">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>221</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Adresse mail</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="fiche_adresse">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>120</y>
+         <width>241</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Adresse postale</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="fiche_telephone">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>160</y>
+         <width>241</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Numéro de téléphone</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="fiche_duree_session">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>40</y>
+         <width>241</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Choix du durée de la session</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="fiche_15min">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>70</y>
+         <width>221</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>15 minutes</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="fiche_30min">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>100</y>
+         <width>241</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>30 minutes</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="fiche_1h">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>130</y>
+         <width>231</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>1 heure</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="fiche_bouton_reglement">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>200</y>
+         <width>281</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Afficher le bouton vers le réglement intérieur</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="fiche_reglement">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>160</y>
+         <width>351</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Afficher la checkbox pour accepter le réglement intérieur</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="titres">
+     <attribute name="title">
+      <string>Titres</string>
+     </attribute>
+     <widget class="QPushButton" name="aide_titres">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>10</y>
+        <width>75</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Aide</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_titre_1">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Titre du premier popup :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_titre_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>131</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Titre du second popup :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_titre__3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>141</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Titre du troisième popup :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="titre_popup_1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>431</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="titre_popup_2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>60</y>
+        <width>431</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="titre_popup_3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>100</y>
+        <width>431</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>161</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Titre du popup de fermeture :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="titre_popup_4">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>140</y>
+        <width>421</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="textes">
+     <attribute name="title">
+      <string>Textes</string>
+     </attribute>
+     <widget class="QPushButton" name="aide_textes">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>10</y>
+        <width>75</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Aide</string>
+      </property>
+     </widget>
+     <widget class="QTabWidget" name="onglet_popup">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>831</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <widget class="QWidget" name="onglet_popup_1">
+       <attribute name="title">
+        <string>Premier popup</string>
+       </attribute>
+       <widget class="QLabel" name="label_text_1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>211</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Texte affiché dans le premier popup :</string>
+        </property>
+       </widget>
+       <widget class="QPlainTextEdit" name="text_popup_1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>811</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="onglet_popup_2">
+       <attribute name="title">
+        <string>Second popup</string>
+       </attribute>
+       <widget class="QLabel" name="label_text_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>301</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Texte affiché dans le second popup :</string>
+        </property>
+       </widget>
+       <widget class="QPlainTextEdit" name="text_popup_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>811</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="onglet_popup_3">
+       <attribute name="title">
+        <string>Troisième popup</string>
+       </attribute>
+       <widget class="QLabel" name="label_popup_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>211</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Texte affiché dans le troisième popup :</string>
+        </property>
+       </widget>
+       <widget class="QPlainTextEdit" name="text_popup_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>811</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="onglet_popup_4">
+       <attribute name="title">
+        <string>Popup de femerture</string>
+       </attribute>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>301</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Texte affiché dans le popup de fermeture de session :</string>
+        </property>
+       </widget>
+       <widget class="QPlainTextEdit" name="text_popup_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>811</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="style">
+     <attribute name="title">
+      <string>Style</string>
+     </attribute>
+     <widget class="QPushButton" name="aide_style">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>10</y>
+        <width>75</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Aide</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Largeur des popups :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="largeur_popup">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>20</y>
+        <width>113</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>20</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>pixels</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Hauteur des popups :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="hauteur_popup">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>60</y>
+        <width>113</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>60</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>pixels</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Police de caractères :</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="police">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>100</y>
+        <width>171</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Taille de la police de caractère :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="taille_police">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>140</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>140</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>pixels</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="temps">
+     <attribute name="title">
+      <string>Temps</string>
+     </attribute>
+     <widget class="QPushButton" name="aide_temps">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>10</y>
+        <width>75</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Aide</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Délai avant fermetures automatique d'un popup :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="delai_fermeture">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>20</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>20</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>secondes</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>231</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Durée totale de la session utilisateur :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="duree_session">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>60</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>60</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>minutes</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>241</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Délai avant ouverture de la seconde popup :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="timer_second_popup">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>100</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>100</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>minutes</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>391</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Durée d'ouverture de la dernière popup avant la fermeture de la session :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="timer_dernier_popup">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>140</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>140</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>secondes</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="gestion">
+     <attribute name="title">
+      <string>Gestion sessions</string>
+     </attribute>
+     <widget class="QPushButton" name="aide_gestion">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>10</y>
+        <width>75</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Aide</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Type de fermeture de session :</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="fermeture_session">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>20</y>
+        <width>161</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="activation_fermeture">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>361</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Activer le popup bloqué, plein écran, à la fermeture de la session</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="Enregistrer">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>400</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enregistrer</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="annuler">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>400</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Annuler</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>868</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuConfiguration">
+    <property name="title">
+     <string>Configuration</string>
+    </property>
+   </widget>
+   <addaction name="menuConfiguration"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
