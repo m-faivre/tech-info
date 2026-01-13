@@ -7,7 +7,7 @@ Session Manager a été forgé à la main par [Mickaël Faivre](mailto:contact@m
 J'en profite pour remercier Github Copilot qui a su m'éclairer quand j'en avais besoin.
 
 ## Code-source
-Le code-source est disponible auprès de Mr Antoine Armanet. Conseiller numérique de la mairie de Louhans-Chateaurenaud.<br>
+[...]
 Il est également disponible, sur demande, en m'envoyant un mail à contact@m-faivre.fr
 
 
