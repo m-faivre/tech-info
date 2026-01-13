@@ -3,8 +3,8 @@
 Ce dépôt contient la synthèse technique de mon stage de fin d'études (Technicien Informatique), effectué au sein de la Direction des Systèmes d'Information (DSI) d'une collectivité territoriale de ~7000 habitants.
 
 ## 📋 Contexte de la mission
-**Environnement :** Mairie et services annexes (~50 postes, 3 sites interconnectés).
-**Durée :** 3 mois (Décembre 2023 - Février 2024).
+**Environnement :** Mairie et services annexes (~50 postes, 3 sites interconnectés).<br>
+**Durée :** 3 mois (Décembre 2023 - Février 2024).<br>
 **Objectif :** Support utilisateur, administration système et participation à la rénovation de l'infrastructure réseau.
 
 ## 🛠️ Réalisations techniques majeures
